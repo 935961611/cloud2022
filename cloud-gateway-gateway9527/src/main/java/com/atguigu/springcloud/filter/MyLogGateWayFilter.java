@@ -25,7 +25,6 @@ public class MyLogGateWayFilter implements GlobalFilter, Ordered
 
         if(uname == null)
         {
-            log.info("***********00******");
             log.info("*******用户名为null，非法用户，o(╥﹏╥)o");
             exchange.getResponse().setStatusCode(HttpStatus.NOT_ACCEPTABLE);
             return exchange.getResponse().setComplete();
